@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255 58 58 / 20%);
+}
+.logo-products-container {
+  display: flex;
+  justify-content: space-between;
+  width: 17rem;
+  height: 3.5rem;
+  margin: 0 5rem 0 4rem;
+}
+.hf-productbar__logo {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.products-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgb(255 58 58 / 20%);
+  border-radius: 0.6rem 0.6rem 0 0;
+  border-bottom: 0;
+  /* margin: 0 0 0 0; */
+  padding: 0 1rem 0 1.5rem;
+  margin-top: 0.6rem;
+  background-color: #ffecec;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* .login-tag, */
+.login-container {
+  display: flex;
+  align-items: center;
+  width: 7.2rem;
+  margin-top: 0.5rem;
+}
+.login-tag {
+  font-size: 15px;
+  color: #646f79;
+}
+.nav-bar {
+  background-color: #ffecec;
+}
+.nav-bar-container {
+  display: flex;
+  height: 3.5rem;
+  justify-content: space-between;
+  margin: 0 4.5rem 0 4rem;
+}
+.helpdesk-logo-container {
+  display: flex;
+  width: 33%;
+  align-items: center;
+}
+.hf-productnav__link {
+  display: flex;
+  padding: 1rem 0 1rem 0;
+  width: 8.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.hf-productnav__logo {
+  display: flex;
+  align-items: center;
+}
+.hf-productnav__logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.options-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.demo-button-container {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.demo-button {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #ff3a3a;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem, 0.5rem 1rem;
   color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.fea-button,
+.sol-button,
+.price-button,
+.res-button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  height: 2rem;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.1em 0.5em;
+  justify-content: center;
+  /* transform: scale3d(0.7, 1, 1);
+  transition: transform 0.4s, opacity 0.4s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fea-button:hover,
+.sol-button:hover,
+.price-button:hover,
+.res-button:hover {
+  background-color: #f8f8f8;
+  /* transform: translate3d(0, 0, 0); */
+}
+.back-banner {
+  background: url(https://assets.www.happyfox.com/v2/images/pricing-new-banner-bg-new.png)
+    no-repeat left top;
+  text-align: center;
+  background-size: cover;
+  width: 100%;
+}
+.plans-pricing-container {
+  display: flex;
+  justify-content: center;
+}
+.plans-pricing-container h1 {
+  /* margin: 0; */
+  width: 100%;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  margin: 80px 0 76px;
+}
+.outer-agent-container {
+  display: flex;
+  justify-content: center;
+}
+.agents-container {
+  display: flex;
+  justify-content: space-between;
+  width: 53%;
+}
+.agents-container div {
+  background-color: #ffeada;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem 5.5rem;
+}
+.agents-container :hover {
+  background-color: white;
+}
+.pricing-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.pricing-menu-container {
+  display: flex;
+  width: 90%;
+}
+.duration-container {
+  background-color: #f5f4f4;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.5rem;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  /* background-size: cover; */
 }
