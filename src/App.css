@@ -147,31 +147,43 @@
   justify-content: space-between;
   width: 53%;
 }
-.agents-container div {
+.agent-not-selected {
   background-color: #ffeada;
   border-radius: 1rem 1rem 0 0;
   padding: 1rem 5.5rem;
 }
-.agents-container :hover {
+.agent-based:hover .ultimate-agent :hover {
+  background-color: white;
+}
+.agent-selected {
   background-color: white;
 }
 .pricing-menu {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  margin: 0 3rem;
+  box-sizing: border-box;
 }
 .pricing-menu-container {
   display: flex;
-  width: 90%;
+  flex-direction: column;
+  width: 100%;
 }
 .duration-container {
   background-color: #f5f4f4;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4.5rem;
-  width: 100%;
+  margin-bottom: 8rem;
   align-items: center;
-  padding: 0.5rem 0.7rem;
+  padding: 0.7rem 0.7rem;
   border-radius: 0.5rem;
-  /* background-size: cover; */
+  min-height: 5rem;
+  max-height: 5rem;
+}
+.scheme-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  /* border: 1px solid #f5f4f4; */
 }

@@ -1,10 +1,19 @@
 import "./App.css";
 import "material-symbols";
 import Duration from "./components/Duration";
-import { agent1 } from "./Agents";
+import { agent1, agent2 } from "./Agents";
 import React from "react";
+import SchemeCards from "./components/SchemeCards";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [selectedDuration, setSelectedDuration] = useState(0);
+  const [selectedAgent, setSelectedAgent] = useState(agent1);
+  useEffect(() => {
+    if (selectedAgent === agent2 && selectedDuration === 3) {
+      setSelectedDuration(2);
+    }
+  }, [selectedAgent, selectedDuration]);
   return (
     <div className="App">
       <header className="App-header">
@@ -70,13 +79,25 @@ function App() {
             </div>
             <div className="outer-agent-container">
               <div className="agents-container">
-                <div class="pricing-explainer__block agent chosen">
-                  <h4 class="pricing-explainer__heading">
+                <div
+                  className={`agent-not-selected ${
+                    selectedAgent === agent1 ? "agent-selected" : ""
+                  }`}
+                  onClick={() => setSelectedAgent(agent1)}
+                >
+                  <h4 className="pricing-explainer__heading">
                     Agent-based pricing
                   </h4>
                 </div>
-                <div class="pricing-explainer__block volume ">
-                  <h4 class="pricing-explainer__heading">Unlimited Agents</h4>
+                <div
+                  className={`agent-not-selected ${
+                    selectedAgent === agent2 ? "agent-selected" : ""
+                  }`}
+                  onClick={() => setSelectedAgent(agent2)}
+                >
+                  <h4 className="pricing-explainer__heading">
+                    Unlimited Agents
+                  </h4>
                 </div>
               </div>
             </div>
@@ -86,11 +107,28 @@ function App() {
       <section className="pricing-menu">
         <div className="pricing-menu-container">
           <div className="duration-container">
-            {agent1[4].map((element, index) => (
-              <Duration key={index} element={element} id={index} />
+            {selectedAgent[selectedAgent.length - 1].map((element, index) => (
+              <Duration
+                key={index}
+                element={element}
+                id={index}
+                selectedDuration={selectedDuration}
+                setSelectedDuration={setSelectedDuration}
+              />
             ))}
           </div>
-          <div className="scheme-container"></div>
+          <div className="scheme-container">
+            {selectedAgent
+              .slice(0, selectedAgent.length - 1)
+              .map((element, index) => (
+                <SchemeCards
+                  key={index}
+                  element={element}
+                  id={index}
+                  selectedDuration={selectedDuration}
+                />
+              ))}
+          </div>
         </div>
       </section>
     </div>

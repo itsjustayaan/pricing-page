@@ -15,7 +15,7 @@ export const agent1 = [
     sp: null,
     offername: "Fantastic",
     content: [
-      "+Everything in Mighty",
+      "+ Everything in Mighty",
       "Multi-brand Helpdesk",
       "SLA Breach Notification",
       "Custom Ticket Queues",
@@ -27,7 +27,7 @@ export const agent1 = [
     sp: "Most Popular",
     offername: "Enterprise",
     content: [
-      "Everything in Fantastic",
+      "+ Everything in Fantastic",
       "Proactive Agent Collision",
       "Task Management",
       "Asset Management",
@@ -37,9 +37,9 @@ export const agent1 = [
   },
   {
     sp: null,
-    offername: "Enterprise",
+    offername: "Enterprise Plus",
     content: [
-      "Everything in Enterprise",
+      "+ Everything in Enterprise",
       "Agent Scripting",
       "2 TB Attachment Store",
       "All-time Reporting History",
@@ -103,26 +103,24 @@ export const agent2 = [
       "200 Custom Fields",
     ],
   },
-  {
-    du1: {
+  [
+    {
       name1: "Annual",
       name2: null,
       prices: [14999, 1999, 2999, 4999],
       savings: null,
     },
-    du2: {
+    {
       name1: "2-Year Savings Plan",
       name2: "Paid Up-front",
       prices: [1149, 1599, 2399, 3999],
       savings: [23, 20, 20, 20],
     },
-    du3: {
+    {
       name1: "3-Year Contract",
       name2: "Billed Annually",
       prices: [1299, 1729, 2609, 4329],
       savings: [13, 13, 13, 13],
     },
-  },
+  ],
 ];
-
-// agent1[4].forEach((du) => console.log(du.name1));
