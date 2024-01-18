@@ -1,0 +1,102 @@
+.scheme-container-common {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: auto;
+  /* border: 1px solid red; */
+  width: 25%;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+  border-left: 1px solid #eee;
+  transition: all 0.2s ease-in;
+}
+.scheme-container-common:first-child {
+  border-left: none;
+}
+.scheme-container-common:hover {
+  box-shadow: -10px 20px 10px 0 rgba(0, 0, 0, 0.08);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.scheme-container-common:hover .get-demo-button {
+  background-color: rgb(255, 58, 58);
+  color: #fff;
+}
+.sp-container {
+  color: rgb(255, 58, 58);
+  margin-top: -35px;
+  text-align: left;
+  padding: 0 1.5rem;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.scheme-name {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  font-size: large;
+  font-weight: bold;
+  text-align: left;
+}
+.pricing-container {
+  padding: 0 1rem;
+  margin-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+.price-container {
+  box-sizing: border-box;
+}
+.material-symbols-outlined {
+  font-size: 1.5rem;
+  align-items: flex-end;
+}
+.price-both {
+  box-sizing: border-box;
+  margin: 0;
+}
+.price {
+  font-size: 3.5rem;
+}
+.price-du {
+  font-size: 14px;
+}
+.saving-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  color: #009928;
+}
+.list-container {
+  display: flex;
+  padding: 20px 35px 85px;
+  box-sizing: border-box;
+}
+.list-container li {
+  width: 100%;
+  text-align: left;
+  padding-left: 0;
+  font-size: 14px;
+  color: #555550;
+  margin-bottom: 15px;
+  list-style: circle;
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+ul.benefit-list-common {
+  list-style-position: outside;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.get-demo-button {
+  display: flex;
+  background-color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}

@@ -1,19 +1,35 @@
+import { useState, React } from "react";
 import "./App.css";
 import "material-symbols";
-import Duration from "./components/Duration";
-import { agent1, agent2 } from "./Agents";
-import React from "react";
-import SchemeCards from "./components/SchemeCards";
-import { useState, useEffect } from "react";
+
+import Duration from "./components/Durations/Duration";
+import SchemeCards from "./components/SchemeCards/SchemeCard";
+import ProductBox from "./components/ProductBoxes/ProductBox";
+import Question from "./components/Questions/Question";
+import Table from "./components/Tables/Table";
+
+import { agent1, agent2 } from "./structure/agents";
+import { ques } from "./structure/faq";
+import { product } from "./structure/products";
+import { table1, table2 } from "./structure/table";
 
 function App() {
   const [selectedDuration, setSelectedDuration] = useState(0);
   const [selectedAgent, setSelectedAgent] = useState(agent1);
-  useEffect(() => {
-    if (selectedAgent === agent2 && selectedDuration === 3) {
-      setSelectedDuration(2);
+  const [selectedTable, setSelectedTable] = useState(table1);
+  const handleAgentChange = (newAgent) => {
+    if (newAgent === agent2 && selectedDuration > 0) {
+      setSelectedDuration(selectedDuration - 1);
     }
-  }, [selectedAgent, selectedDuration]);
+    if (newAgent === agent1) {
+      setSelectedDuration(selectedDuration + 1);
+      setSelectedTable(table1);
+    } else {
+      setSelectedTable(table2);
+    }
+    setSelectedAgent(newAgent);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,44 +49,44 @@ function App() {
           </div>
         </div>
         <div className="login-container">
-          <a className="login-tag">Log In</a>
+          <a href="dgdbd" className="login-tag">
+            Log In
+          </a>
         </div>
       </header>
-      <section className="nav-bar">
-        <div className="nav-bar-container">
-          <div className="helpdesk-logo-container">
-            <a className="hf-productnav__link">
-              <img
-                id="hfNavbarlogo"
-                src="//assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg"
-                alt="happyfox logo"
-                width="32"
-                height="32"
-                className="hf-productnav__logo"
-              />
-              <span className="hf-productnav__logo-text">helpdesk</span>
-            </a>
+      <div className="nav-bar-container">
+        <div className="helpdesk-logo-container">
+          <a href="sfadsa" className="hf-productnav__link">
+            <img
+              id="hfNavbarlogo"
+              src="//assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg"
+              alt="happyfox logo"
+              width="32"
+              height="32"
+              className="hf-productnav__logo"
+            />
+            <span className="hf-productnav__logo-text">helpdesk</span>
+          </a>
+        </div>
+        <div className="options-container">
+          <div className="fea-button">
+            Features
+            <span className="material-symbols-outlined">arrow_drop_down</span>
           </div>
-          <div className="options-container">
-            <div className="fea-button">
-              Features
-              <span class="material-symbols-outlined">arrow_drop_down</span>
-            </div>
-            <div className="sol-button">
-              Solutions
-              <span class="material-symbols-outlined">arrow_drop_down</span>
-            </div>
-            <div className="price-button">Pricing</div>
-            <div className="res-button">
-              Resources
-              <span class="material-symbols-outlined">arrow_drop_down</span>
-            </div>
+          <div className="sol-button">
+            Solutions
+            <span className="material-symbols-outlined">arrow_drop_down</span>
           </div>
-          <div className="demo-button-container">
-            <div className="demo-button">Get a Demo</div>
+          <div className="price-button">Pricing</div>
+          <div className="res-button">
+            Resources
+            <span className="material-symbols-outlined">arrow_drop_down</span>
           </div>
         </div>
-      </section>
+        <div className="demo-button-container">
+          <div className="demo-button">Get a Demo</div>
+        </div>
+      </div>
       <section className="plans-menu">
         <div class="back-banner ">
           <div class="outer-container">
@@ -83,7 +99,7 @@ function App() {
                   className={`agent-not-selected ${
                     selectedAgent === agent1 ? "agent-selected" : ""
                   }`}
-                  onClick={() => setSelectedAgent(agent1)}
+                  onClick={() => handleAgentChange(agent1)}
                 >
                   <h4 className="pricing-explainer__heading">
                     Agent-based pricing
@@ -93,7 +109,7 @@ function App() {
                   className={`agent-not-selected ${
                     selectedAgent === agent2 ? "agent-selected" : ""
                   }`}
-                  onClick={() => setSelectedAgent(agent2)}
+                  onClick={() => handleAgentChange(agent2)}
                 >
                   <h4 className="pricing-explainer__heading">
                     Unlimited Agents
@@ -118,16 +134,57 @@ function App() {
             ))}
           </div>
           <div className="scheme-container">
-            {selectedAgent
-              .slice(0, selectedAgent.length - 1)
-              .map((element, index) => (
-                <SchemeCards
-                  key={index}
-                  element={element}
-                  id={index}
-                  selectedDuration={selectedDuration}
-                />
-              ))}
+            <div className="scheme-inner-container">
+              {selectedAgent
+                .slice(0, selectedAgent.length - 1)
+                .map((element, index) => (
+                  <SchemeCards
+                    key={index}
+                    element={element}
+                    id={index}
+                    selectedDuration={selectedDuration}
+                    selectedAgent={selectedAgent}
+                  />
+                ))}
+            </div>
+            <p className="scheme-p">
+              All plans require a minimum of 5 help desk agents. Non-profit and
+              educational organizations are eligible for a discount.
+            </p>
+          </div>
+        </div>
+      </section>
+      <h3 className="table-section-h3">Compare Help Desk Plans</h3>
+      <div className="table-container">
+        <div className="col-name-header">
+          <h4>{selectedAgent[0].offername}</h4>
+          <h4>{selectedAgent[1].offername}</h4>
+          <h4>{selectedAgent[2].offername}</h4>
+          <h4>{selectedAgent[3].offername}</h4>
+        </div>
+        <div className="table-inner-container">
+          {selectedTable.map((element, index) => (
+            <Table key={index} element={element} id={index} />
+          ))}
+        </div>
+      </div>
+      <section className="faq-section">
+        <div className="faq-container">
+          <h3>Frequently Asked Question</h3>
+          <div className="ques-container">
+            {ques.map((element, index) => (
+              <Question key={index} element={element} id={index} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="not-footer-section">
+        <div className="not-footer">
+          <p className="not-footer-p">More From HappyFox</p>
+          <div className="products-box">
+            {product.map((element, index) => (
+              <ProductBox key={index} element={element} id={index} />
+            ))}
           </div>
         </div>
       </section>

@@ -1,0 +1,42 @@
+.product-box {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.product-box p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+.product-box h4 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+.product-box > img {
+  margin-bottom: 25px;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: border-box;
+}
+.product-box-demo {
+  display: flex;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  align-items: center;
+}
+.product-box:hover {
+  border: 1px solid #dadada;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}

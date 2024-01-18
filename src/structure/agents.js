@@ -77,17 +77,17 @@ export const agent1 = [
 export const agent2 = [
   {
     sp: null,
-    name: "Starter",
+    offername: "Starter",
     content: ["Unlimited Agents", "10,000 Tickets / year", "10 Custom Fields"],
   },
   {
     sp: null,
-    name: "Growth",
+    offername: "Growth",
     content: ["Unlimited Agents", "20,000 Tickets / year", "20 Custom Fields"],
   },
   {
     sp: "Most Popular",
-    name: "Scale",
+    offername: "Scale",
     content: [
       "Unlimited Agents",
       "100,000 Tickets / year",
@@ -96,7 +96,7 @@ export const agent2 = [
   },
   {
     sp: null,
-    name: "Scale Plus",
+    offername: "Scale Plus",
     content: [
       "Unlimited Agents",
       "250,000 Tickets / year",
@@ -107,7 +107,7 @@ export const agent2 = [
     {
       name1: "Annual",
       name2: null,
-      prices: [14999, 1999, 2999, 4999],
+      prices: [1499, 1999, 2999, 4999],
       savings: null,
     },
     {

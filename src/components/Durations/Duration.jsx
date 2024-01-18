@@ -11,7 +11,6 @@ function Duration({ element, id, setSelectedDuration, selectedDuration }) {
       onClick={() => setSelectedDuration(id)}
     >
       {element.name1}
-      <br />
       {element.name2 && <span>{element.name2}</span>}
     </div>
   );
