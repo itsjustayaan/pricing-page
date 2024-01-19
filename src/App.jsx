@@ -33,58 +33,69 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="logo-products-container">
-          <div className="hf-productbar__logo">
-            <img
-              id="hfTopbarlogo"
-              src="//assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
-              width="116"
-              height="24"
-              alt="happyfox logo"
-            />
+        <div className="header-container">
+          <div className="logo-products-container">
+            <div className="hf-productbar-logo">
+              <img
+                id="hfTopbarlogo"
+                src="//assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg"
+                width="116"
+                height="24"
+                alt="happyfox logo"
+              />
+            </div>
+            <div className="products-tag">
+              <p>Products</p>
+              <span className="material-symbols-outlined">arrow_drop_down</span>
+            </div>
           </div>
-          <div className="products-tag">
-            Products
-            <span className="material-symbols-outlined">arrow_drop_down</span>
+          <div className="login-container">
+            <a href="dgdbd" className="login-tag">
+              Log In
+            </a>
           </div>
-        </div>
-        <div className="login-container">
-          <a href="dgdbd" className="login-tag">
-            Log In
-          </a>
         </div>
       </header>
       <div className="nav-bar-container">
-        <div className="helpdesk-logo-container">
-          <a href="sfadsa" className="hf-productnav__link">
-            <img
-              id="hfNavbarlogo"
-              src="//assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg"
-              alt="happyfox logo"
-              width="32"
-              height="32"
-              className="hf-productnav__logo"
-            />
-            <span className="hf-productnav__logo-text">helpdesk</span>
-          </a>
-        </div>
-        <div className="options-container">
-          <div className="fea-button">
-            Features
-            <span className="material-symbols-outlined">arrow_drop_down</span>
+        <div className="nav-bar">
+          <div className="helpdesk-logo-container">
+            <span
+              className="material-symbols-outlined"
+              style={{
+                fontWeight: "600",
+                padding: "0 10px 0 0",
+              }}
+            >
+              menu
+            </span>
+            <a href="sfadsa" className="hf-productnav-link">
+              <img
+                id="hfNavbarlogo"
+                src="//assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg"
+                alt="happyfox logo"
+                className="hf-productnav-logo"
+              />
+              <span className="hf-productnav-logo-text">helpdesk</span>
+            </a>
           </div>
-          <div className="sol-button">
-            Solutions
-            <span className="material-symbols-outlined">arrow_drop_down</span>
+          <div className="options-container">
+            <div className="fea-button">
+              Features
+              <span className="material-symbols-outlined">arrow_drop_down</span>
+            </div>
+            <div className="sol-button">
+              Solutions
+              <span className="material-symbols-outlined">arrow_drop_down</span>
+            </div>
+            <div className="price-button">Pricing</div>
+            <div className="res-button">
+              Resources
+              <span className="material-symbols-outlined">arrow_drop_down</span>
+            </div>
           </div>
-          <div className="price-button">Pricing</div>
-          <div className="res-button">
-            Resources
-            <span className="material-symbols-outlined">arrow_drop_down</span>
+          <div className="demo-button-container">
+            <div className="demo-button">Get a Demo</div>
           </div>
-        </div>
-        <div className="demo-button-container">
-          <div className="demo-button">Get a Demo</div>
         </div>
       </div>
       <section className="plans-menu">
@@ -101,7 +112,7 @@ function App() {
                   }`}
                   onClick={() => handleAgentChange(agent1)}
                 >
-                  <h4 className="pricing-explainer__heading">
+                  <h4 className="pricing-explainer-heading">
                     Agent-based pricing
                   </h4>
                 </div>
@@ -111,7 +122,7 @@ function App() {
                   }`}
                   onClick={() => handleAgentChange(agent2)}
                 >
-                  <h4 className="pricing-explainer__heading">
+                  <h4 className="pricing-explainer-heading">
                     Unlimited Agents
                   </h4>
                 </div>
@@ -121,37 +132,35 @@ function App() {
         </div>
       </section>
       <section className="pricing-menu">
-        <div className="pricing-menu-container">
-          <div className="duration-container">
-            {selectedAgent[selectedAgent.length - 1].map((element, index) => (
-              <Duration
-                key={index}
-                element={element}
-                id={index}
-                selectedDuration={selectedDuration}
-                setSelectedDuration={setSelectedDuration}
-              />
-            ))}
+        <div className="duration-container">
+          {selectedAgent[selectedAgent.length - 1].map((element, index) => (
+            <Duration
+              key={index}
+              element={element}
+              id={index}
+              selectedDuration={selectedDuration}
+              setSelectedDuration={setSelectedDuration}
+            />
+          ))}
+        </div>
+        <div className="scheme-container">
+          <div className="scheme-inner-container">
+            {selectedAgent
+              .slice(0, selectedAgent.length - 1)
+              .map((element, index) => (
+                <SchemeCards
+                  key={index}
+                  element={element}
+                  id={index}
+                  selectedDuration={selectedDuration}
+                  selectedAgent={selectedAgent}
+                />
+              ))}
           </div>
-          <div className="scheme-container">
-            <div className="scheme-inner-container">
-              {selectedAgent
-                .slice(0, selectedAgent.length - 1)
-                .map((element, index) => (
-                  <SchemeCards
-                    key={index}
-                    element={element}
-                    id={index}
-                    selectedDuration={selectedDuration}
-                    selectedAgent={selectedAgent}
-                  />
-                ))}
-            </div>
-            <p className="scheme-p">
-              All plans require a minimum of 5 help desk agents. Non-profit and
-              educational organizations are eligible for a discount.
-            </p>
-          </div>
+          <p className="scheme-p">
+            All plans require a minimum of 5 help desk agents. Non-profit and
+            educational organizations are eligible for a discount.
+          </p>
         </div>
       </section>
       <h3 className="table-section-h3">Compare Help Desk Plans</h3>

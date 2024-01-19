@@ -27,7 +27,6 @@ function StatusIndicator({ value }) {
   }
 }
 
-// Table component
 function Table({ element, id, selectedTable }) {
   return (
     <>
@@ -43,10 +42,12 @@ function Table({ element, id, selectedTable }) {
             <p>
               <a href="dsfs">{value.label}</a>
             </p>
-            <StatusIndicator value={value.card1} />
-            <StatusIndicator value={value.card2} />
-            <StatusIndicator value={value.card3} />
-            <StatusIndicator value={value.card4} />
+            <div className="ticks-grid">
+              <StatusIndicator value={value.card1} />
+              <StatusIndicator value={value.card2} />
+              <StatusIndicator value={value.card3} />
+              <StatusIndicator value={value.card4} />
+            </div>
           </div>
         ))}
       </div>
