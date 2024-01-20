@@ -176,6 +176,9 @@ function App() {
             <Table key={index} element={element} id={index} />
           ))}
         </div>
+        <p className="table-bottom">
+          <sup>*</sup> Planned <br /># Only with custom domain
+        </p>
       </div>
       <section className="faq-section">
         <div className="faq-container">

@@ -90,6 +90,17 @@
 .dark {
   background: #fafafa;
 }
+.view-all {
+  display: inline-block;
+  color: #323643;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: solid 1px #989dad;
+  border-radius: 4px;
+  margin: 20px 8px 20px 8px;
+  cursor: pointer;
+  background: 0 0;
+}
 /* .table-row {
   box-sizing: border-box;
   font-size: 16px;

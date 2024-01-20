@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, React } from "react";
 import "material-symbols";
 import "./Table.css";
 
@@ -28,11 +28,18 @@ function StatusIndicator({ value }) {
 }
 
 function Table({ element, id, selectedTable }) {
+  const [viewAll, setViewAll] = useState(false);
+
+  const isThirdPartyIntegrations = element.title === "Third Party Integrations";
+  const numberOfRowsToShow =
+    viewAll || !isThirdPartyIntegrations ? element.content.length : 5;
+  const displayedRows = element.content.slice(0, numberOfRowsToShow);
+
   return (
     <>
       <div className={`table-row table-row-${id}`}>
         <h4>{element.title}</h4>
-        {element.content.map((value, index) => (
+        {displayedRows.map((value, index) => (
           <div
             key={index}
             className={`row-common row-common-${index} ${
@@ -50,9 +57,13 @@ function Table({ element, id, selectedTable }) {
             </div>
           </div>
         ))}
+        {isThirdPartyIntegrations && !viewAll && (
+          <div className="view-all" onClick={() => setViewAll(true)}>
+            VIEW ALL +
+          </div>
+        )}
       </div>
     </>
   );
 }
-
 export default Table;
