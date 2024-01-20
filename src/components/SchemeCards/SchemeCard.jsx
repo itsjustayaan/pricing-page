@@ -31,9 +31,18 @@ function SchemeCards({ element, id, selectedDuration, selectedAgent }) {
         )}
       </div>
       <div className={`list-container list-container-${id}`}>
-        <ul className={`benefit-list-common benefits-lists-${id}`}>
+        <ul className={`benefit-list-common benefits-lists-${id} `}>
           {element.content.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li
+              key={index}
+              className={`${
+                selectedAgent !== agent2 && id > 0 && index === 0
+                  ? "remove-disk"
+                  : ""
+              }`}
+            >
+              {item}
+            </li>
           ))}
         </ul>
       </div>

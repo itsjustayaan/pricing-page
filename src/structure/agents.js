@@ -107,19 +107,19 @@ export const agent2 = [
     {
       name1: "Annual",
       name2: null,
-      prices: [1499, 1999, 2999, 4999],
+      prices: ["1,499", "1,999", "2,999", "4,999"],
       savings: null,
     },
     {
       name1: "2-Year Savings Plan",
       name2: "Paid Up-front",
-      prices: [1149, 1599, 2399, 3999],
+      prices: ["1,149", "1,599", "2,399", "3,999"],
       savings: [23, 20, 20, 20],
     },
     {
       name1: "3-Year Contract",
       name2: "Billed Annually",
-      prices: [1299, 1729, 2609, 4329],
+      prices: ["1,299", "1,729", "2,609", "4,329"],
       savings: [13, 13, 13, 13],
     },
   ],

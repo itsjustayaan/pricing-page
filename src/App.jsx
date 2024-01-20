@@ -60,7 +60,7 @@ function App() {
         <div className="nav-bar">
           <div className="helpdesk-logo-container">
             <span
-              className="material-symbols-outlined"
+              className="material-symbols-outlined burger-menu"
               style={{
                 fontWeight: "600",
                 padding: "0 10px 0 0",

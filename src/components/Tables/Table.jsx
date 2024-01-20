@@ -10,7 +10,7 @@ function StatusIndicator({ value }) {
         <span
           className="table-col material-symbols-outlined"
           style={{
-            color: "green",
+            color: "#56b67d",
           }}
         >
           check
@@ -36,7 +36,7 @@ function Table({ element, id, selectedTable }) {
           <div
             key={index}
             className={`row-common row-common-${index} ${
-              index % 2 === 0 ? "dark" : ""
+              index % 2 === 0 ? "" : "dark"
             }`}
           >
             <p>

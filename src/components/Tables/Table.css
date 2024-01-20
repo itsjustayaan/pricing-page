@@ -51,7 +51,7 @@
 }
 .table-row {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 10px;
 }
 
@@ -85,7 +85,7 @@
   box-sizing: border-box;
   text-align: left;
   color: #797879;
-  font-weight: 300;
+  font-weight: 500;
 }
 .dark {
   background: #fafafa;

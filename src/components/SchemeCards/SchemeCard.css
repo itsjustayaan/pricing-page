@@ -10,7 +10,7 @@
   .scheme-container-common {
     border-top: none !important;
     border-left: 1px solid #eee;
-    width: 25%;
+    width: 25% !important;
     padding: 0rem 0 2rem;
   }
   .scheme-container-common:hover {
@@ -100,7 +100,7 @@
   width: 100%;
   text-align: left;
   padding-left: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #555550;
   margin-bottom: 15px;
   list-style: circle;
@@ -113,6 +113,11 @@ ul.benefit-list-common {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.remove-disk:first-child {
+  list-style: none;
+  font-weight: 600;
+  margin-left: -9px;
 }
 .get-demo-button {
   display: flex;
