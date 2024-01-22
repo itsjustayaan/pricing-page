@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pricing-page/static/css/main.bb58160b.css",
+    "main.css": "/pricing-page/static/css/main.786712dc.css",
     "main.js": "/pricing-page/static/js/main.2d07134b.js",
     "static/js/787.2f417e23.chunk.js": "/pricing-page/static/js/787.2f417e23.chunk.js",
     "static/media/material-symbols-rounded.woff2": "/pricing-page/static/media/material-symbols-rounded.72135bf39677eacde702.woff2",
@@ -8,12 +8,12 @@
     "static/media/material-symbols-sharp.woff2": "/pricing-page/static/media/material-symbols-sharp.bb339f38644fb7c3f7b4.woff2",
     "static/media/Hero New Regular.woff": "/pricing-page/static/media/Hero New Regular.e87e6c41ba752721f9bd.woff",
     "index.html": "/pricing-page/index.html",
-    "main.bb58160b.css.map": "/pricing-page/static/css/main.bb58160b.css.map",
+    "main.786712dc.css.map": "/pricing-page/static/css/main.786712dc.css.map",
     "main.2d07134b.js.map": "/pricing-page/static/js/main.2d07134b.js.map",
     "787.2f417e23.chunk.js.map": "/pricing-page/static/js/787.2f417e23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb58160b.css",
+    "static/css/main.786712dc.css",
     "static/js/main.2d07134b.js"
   ]
 }
