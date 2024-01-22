@@ -9,6 +9,7 @@
 @media only screen and (min-width: 1200px) {
   .dur-container-common {
     padding: 35px 0 !important;
+    box-sizing: border-box !important;
   }
 }
 .dur-container-common {
@@ -18,13 +19,13 @@
   justify-content: center;
   padding: 30px 0;
   width: 100%;
-  font-weight: lighter;
+  font-weight: 400;
   max-height: 2rem;
   min-height: 2rem;
   box-sizing: border-box;
   font-size: 15px;
   font-weight: 500;
-  /* border: 1px solid red; */
+  border: 1px solid transparent;
 }
 .dur-container-common:hover {
   border: 1px solid #c8c7c7;
@@ -32,6 +33,7 @@
   background-color: #fff;
   font-weight: 600;
   font-size: 16px;
+  box-sizing: border-box;
 }
 .dur-container-common span {
   font-size: 12px;

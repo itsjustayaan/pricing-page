@@ -44,10 +44,11 @@
   .header-container {
     padding: 10px 5px 0 !important;
     /* margin: 0 7% !important; */
+    width: 80% !important;
     max-width: 1440px;
   }
   .logo-products-container {
-    width: 270px !important;
+    width: 275px !important;
   }
   .products-tag {
     display: flex;
@@ -73,6 +74,7 @@
     justify-content: center;
   }
   .nav-bar {
+    width: 79% !important;
     max-width: 1400px;
   }
   .helpdesk-logo-container span:first-child {
@@ -137,7 +139,7 @@
   .duration-container {
     flex-direction: row !important;
     margin-bottom: 50px;
-    padding: 15px !important;
+    padding: 15px 10px !important;
     min-width: 1150px;
     max-width: 1150px;
   }
@@ -223,7 +225,7 @@
     align-items: center;
   }
   .not-footer {
-    padding: 0 3rem 0 !important;
+    padding: 0 9rem 0 !important;
     max-width: 1350px;
   }
   .not-footer-p {
@@ -232,12 +234,12 @@
   .products-box {
     display: grid;
     width: 100%;
-    height: 100vh;
-    grid-template-rows: 40% 40% !important;
+    grid-template-rows: 50% 50% !important;
     grid-template-columns: 33% 33% 33% !important;
-    grid-gap: 5rem 0;
+    /* grid-gap: 5rem 0; */
     box-sizing: border-box;
-    justify-content: space-between;
+
+    /* justify-content: space-between; */
   }
 }
 .App {
@@ -544,9 +546,8 @@
 .products-box {
   display: grid;
   width: 100%;
-  height: 100vh;
   grid-template-columns: 1fr;
-  grid-gap: 5rem 0;
+  /* grid-gap: 5rem 0; */
   box-sizing: border-box;
   justify-content: space-between;
 }

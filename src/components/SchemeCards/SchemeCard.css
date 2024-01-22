@@ -5,6 +5,9 @@
 @media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 992px) {
+  /* .list-container li {
+    font-size: 12px !important;
+  } */
 }
 @media only screen and (min-width: 1200px) {
   .scheme-container-common {
@@ -113,6 +116,7 @@ ul.benefit-list-common {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 .remove-disk:first-child {
   list-style: none;
