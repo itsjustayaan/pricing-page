@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "hero-new";
-  src: url("./fonts/Hero New Regular.woff");
-}
 * {
   box-sizing: border-box;
 }
@@ -13,12 +9,25 @@
     display: none;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 430px) {
   .products-tag {
     display: none;
   }
   .options-container {
     display: none;
+  }
+  .scheme-inner-container {
+    padding: 0 25px;
+  }
+  .col-name-header {
+    max-width: 430px;
+    padding: 20px 50px !important;
+  }
+  .table-inner-container {
+    padding: 0 20px;
+  }
+  .duration-container {
+    margin: 0px 20px !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -59,15 +68,15 @@
     border-bottom: 0;
     padding: 0px 20px !important;
     background-color: #ffecec;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500 !important;
     box-sizing: border-box;
   }
   .products-tag p {
     margin: 0 0 2%;
     color: #000;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     box-sizing: border-box;
   }
   .nav-bar-container {
@@ -81,7 +90,7 @@
     display: none;
   }
   .helpdesk-logo-container span {
-    font-size: 24px !important;
+    font-size: 25px !important;
   }
   .hf-productnav-logo {
     width: 30px;
@@ -90,7 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
     box-sizing: border-box;
   }
   .fea-button,
@@ -100,11 +109,12 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500 !important;
     border-radius: 0.5rem;
     padding: 1% 2%;
     justify-content: center;
     box-sizing: border-box;
+    color: #181c20;
   }
   .fea-button:hover,
   .sol-button:hover,
@@ -124,8 +134,9 @@
   }
   .agent-not-selected {
     max-width: 410px !important;
-    padding: 25px 10px !important;
+    padding: 25px 0px !important;
     margin: 0 15px !important;
+    width: 30% !important;
   }
   .pricing-explainer-heading {
     margin: 20px 0;
@@ -139,15 +150,20 @@
   .duration-container {
     flex-direction: row !important;
     margin-bottom: 50px;
-    padding: 15px 10px !important;
+    padding: 10px 10px !important;
     min-width: 1150px;
     max-width: 1150px;
+    justify-content: space-around;
+  }
+  .scheme-container {
+    margin-top: 50px !important;
   }
   .scheme-inner-container {
     flex-direction: row !important;
     align-items: normal;
     min-width: 1120px;
     max-width: 1120px;
+    padding: 0 !important;
   }
   .table-container {
     display: flex !important;
@@ -159,7 +175,7 @@
   .col-name-header {
     display: flex !important;
     justify-content: flex-end !important;
-    padding: 2rem 7rem 2rem 0 !important;
+    padding: 2rem 2rem 2rem 0 !important;
     box-shadow: none !important;
     border-bottom: 1px solid rgba(152, 157, 173, 0.2);
     box-sizing: border-box;
@@ -175,7 +191,7 @@
     margin: 0;
     font-size: 20px !important;
     box-sizing: border-box;
-    width: 150px !important;
+    width: 180px !important;
   }
   .table-inner-container {
     margin: 1rem 2rem 0;
@@ -350,7 +366,7 @@
   padding: 6px 12px;
   color: white;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   box-sizing: border-box;
 }
 .plans-menu {
@@ -375,7 +391,7 @@
   width: 100%;
   font-size: 40px;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   margin: 45px 0;
   box-sizing: border-box;
 }
@@ -406,7 +422,7 @@
 }
 .pricing-explainer-heading {
   margin: 10px 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   width: 100%;
   display: flex;
@@ -448,8 +464,8 @@
 }
 .scheme-p {
   margin: 60px auto 40px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 300;
   text-align: center;
   max-width: 570px;
   border-radius: 16px;
@@ -465,7 +481,7 @@
   text-align: center;
   text-align: center;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000;
   transition: all 0.2s ease-in;
   padding: 40px 0;
@@ -491,9 +507,11 @@
 }
 .col-name-header h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
   box-sizing: border-box;
 }
+
 .table-bottom {
   color: #9b9b9b;
   padding: 20px 25px;
@@ -540,7 +558,7 @@
   font-size: 32px;
   margin-bottom: 70px;
   color: #323643;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 35px;
 }
 .products-box {

@@ -12,7 +12,7 @@
     font-size: 16px;
   }
   .table-row h4 {
-    padding: 0 5px;
+    padding: 0 5px !important;
   }
 
   .row-common {
@@ -23,7 +23,7 @@
   }
   .row-common p {
     width: 33%;
-    padding: 10px;
+    padding: 10px !important;
     margin: 0;
   }
   .row-common a {
@@ -36,14 +36,15 @@
   }
   .ticks-grid {
     display: flex !important;
-    width: 70% !important;
+    width: 65% !important;
+    justify-content: space-around !important;
   }
   .table-col {
-    width: 19% !important;
+    width: 22% !important;
     box-sizing: border-box !important;
-    text-align: center !important;
     color: #797879;
     font-weight: 300;
+    padding: 0 !important;
   }
   .dark {
     background: #fafafa;
@@ -56,7 +57,7 @@
 }
 
 .table-row h4 {
-  padding: 0 10px;
+  padding: 0 15px;
   font-weight: 600;
   font-size: 16px;
 }
@@ -66,8 +67,10 @@
   box-sizing: border-box;
 }
 .row-common p {
-  padding: 10px;
+  padding: 10px 10px 10px 15px;
   margin: 0;
+  font-size: 16px;
+  font-weight: 300;
 }
 .row-common a {
   color: #323643;
@@ -79,16 +82,18 @@
 }
 .ticks-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.45fr 0.45fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 10px;
+  justify-content: center;
 }
 .table-col {
-  padding: 0 20px;
+  /* padding: 0 40px; */
   box-sizing: border-box;
   text-align: left;
   color: #797879;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 16px;
 }
 .dark {
   background: #fafafa;
@@ -97,6 +102,7 @@
   display: inline-block;
   color: #323643;
   font-size: 14px;
+  font-weight: 400;
   padding: 5px 10px;
   border: solid 1px #989dad;
   border-radius: 4px;
@@ -104,40 +110,15 @@
   cursor: pointer;
   background: 0 0;
 }
-/* .table-row {
-  box-sizing: border-box;
-  font-size: 16px;
+.tick {
+  width: 20px;
+  height: 20px;
+  background: url("https://assets.www.happyfox.com/v2/images/pricing-tick.svg")
+    no-repeat left top;
 }
-.table-row h4 {
-  padding: 0 10px;
+.dash {
+  width: 20px;
+  height: 20px;
+  background: url("https://assets.www.happyfox.com/v2/images/pricing-no-tick.svg")
+    no-repeat left top;
 }
-
-.row-common {
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-  box-sizing: border-box;
-}
-.row-common p {
-  width: 33%;
-  padding: 10px;
-  margin: 0;
-}
-.row-common a {
-  color: #323643;
-  border-bottom: 0.5px dotted #323643;
-  text-decoration: none;
-}
-.row-common:hover {
-  background: #f7f7f7;
-}
-.table-col {
-  width: 19%;
-  box-sizing: border-box;
-  text-align: center;
-  color: #797879;
-  font-weight: 300;
-}
-.dark {
-  background: #fafafa;
-} */

@@ -6,22 +6,9 @@ import "./Table.css";
 function StatusIndicator({ value }) {
   switch (value) {
     case true:
-      return (
-        <span
-          className="table-col material-symbols-outlined"
-          style={{
-            color: "#56b67d",
-          }}
-        >
-          check
-        </span>
-      );
+      return <p className="table-col tick"></p>;
     case false:
-      return (
-        <span className="table-col material-symbols-outlined">
-          horizontal_rule
-        </span>
-      );
+      return <p className="table-col dash"></p>;
     default:
       return <span className="table-col">{value}</span>;
   }

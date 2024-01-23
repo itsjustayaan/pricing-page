@@ -10,6 +10,7 @@
   .dur-container-common {
     padding: 35px 0 !important;
     box-sizing: border-box !important;
+    width: 25% !important;
   }
 }
 .dur-container-common {
@@ -23,15 +24,15 @@
   max-height: 2rem;
   min-height: 2rem;
   box-sizing: border-box;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 300;
   border: 1px solid transparent;
 }
 .dur-container-common:hover {
   border: 1px solid #c8c7c7;
   border-radius: 10px;
   background-color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -42,7 +43,7 @@
   border: 1px solid #c8c7c7;
   border-radius: 0.5rem;
   background-color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
 }
 
