@@ -1,19 +1,36 @@
 {
   "files": {
-    "main.css": "/pricing-page/static/css/main.786712dc.css",
-    "main.js": "/pricing-page/static/js/main.2d07134b.js",
+    "main.css": "/pricing-page/static/css/main.f84d60ac.css",
+    "main.js": "/pricing-page/static/js/main.9e7bbf9b.js",
     "static/js/787.2f417e23.chunk.js": "/pricing-page/static/js/787.2f417e23.chunk.js",
     "static/media/material-symbols-rounded.woff2": "/pricing-page/static/media/material-symbols-rounded.72135bf39677eacde702.woff2",
     "static/media/material-symbols-outlined.woff2": "/pricing-page/static/media/material-symbols-outlined.3b08aacf2202d3cfbf3d.woff2",
     "static/media/material-symbols-sharp.woff2": "/pricing-page/static/media/material-symbols-sharp.bb339f38644fb7c3f7b4.woff2",
+    "static/media/Hero New ExtraBold Italic.woff": "/pricing-page/static/media/Hero New ExtraBold Italic.2fdd45a6d1334e9e0a23.woff",
+    "static/media/Hero New Bold Italic.woff": "/pricing-page/static/media/Hero New Bold Italic.9400386fe1c71697f410.woff",
+    "static/media/Hero New SemiBold Italic.woff": "/pricing-page/static/media/Hero New SemiBold Italic.6c10ae15c1789168c843.woff",
+    "static/media/Hero New Medium Italic.woff": "/pricing-page/static/media/Hero New Medium Italic.d21dda7ab68dcd1fa829.woff",
+    "static/media/Hero New Regular Italic.woff": "/pricing-page/static/media/Hero New Regular Italic.7fe9fd959df5787564ad.woff",
+    "static/media/Hero New Super Italic.woff": "/pricing-page/static/media/Hero New Super Italic.9a93e287910365a8164c.woff",
+    "static/media/Hero New ExtraBold.woff": "/pricing-page/static/media/Hero New ExtraBold.db0640f098df73442aa8.woff",
+    "static/media/Hero New Light Italic.woff": "/pricing-page/static/media/Hero New Light Italic.19b81cf27214b3d5f4d1.woff",
+    "static/media/Hero New Bold.woff": "/pricing-page/static/media/Hero New Bold.e0ad8ac80bc1c20f6542.woff",
+    "static/media/Hero New SemiBold.woff": "/pricing-page/static/media/Hero New SemiBold.81e6d37debbcd37d6dd6.woff",
+    "static/media/Hero New Medium.woff": "/pricing-page/static/media/Hero New Medium.c2ecb485ad69a948bb70.woff",
     "static/media/Hero New Regular.woff": "/pricing-page/static/media/Hero New Regular.e87e6c41ba752721f9bd.woff",
+    "static/media/Hero New UltraLight Italic.woff": "/pricing-page/static/media/Hero New UltraLight Italic.75ae3c8819d28615b6b7.woff",
+    "static/media/Hero New Super.woff": "/pricing-page/static/media/Hero New Super.8a428e77f913299b16d4.woff",
+    "static/media/Hero New Thin Italic.woff": "/pricing-page/static/media/Hero New Thin Italic.327937fcaaa5b917345d.woff",
+    "static/media/Hero New Light.woff": "/pricing-page/static/media/Hero New Light.d4476db5dc6603049c15.woff",
+    "static/media/Hero New UltraLight.woff": "/pricing-page/static/media/Hero New UltraLight.51673bcdf88dea65059f.woff",
+    "static/media/Hero New Thin.woff": "/pricing-page/static/media/Hero New Thin.9ee8e61e94dce03f05af.woff",
     "index.html": "/pricing-page/index.html",
-    "main.786712dc.css.map": "/pricing-page/static/css/main.786712dc.css.map",
-    "main.2d07134b.js.map": "/pricing-page/static/js/main.2d07134b.js.map",
+    "main.f84d60ac.css.map": "/pricing-page/static/css/main.f84d60ac.css.map",
+    "main.9e7bbf9b.js.map": "/pricing-page/static/js/main.9e7bbf9b.js.map",
     "787.2f417e23.chunk.js.map": "/pricing-page/static/js/787.2f417e23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.786712dc.css",
-    "static/js/main.2d07134b.js"
+    "static/css/main.f84d60ac.css",
+    "static/js/main.9e7bbf9b.js"
   ]
 }
